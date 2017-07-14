@@ -1,0 +1,9 @@
+### OS ###
+*.DS_Store
+*thumbs.db
+*desktop.ini
+
+### npm ###
+node_modules
+
+### Build ###
