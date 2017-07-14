@@ -13,6 +13,8 @@ $(function() {
                 }
                 else {
                     switch (letter) {
+                        case ' ':
+                            return ':black_large_square: ';
                         case '.':
                             return ':record_button: ';
                         case'?':
