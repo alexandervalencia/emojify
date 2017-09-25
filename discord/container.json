@@ -1,5 +1,0 @@
-{
-    "id": "discord",
-    "type": "wedeploy/hosting:latest",
-    "description": "Emojify your sentences for Discord chat!"
-}
