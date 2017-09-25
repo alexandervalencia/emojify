@@ -1,5 +1,4 @@
 {
     "id": "liferayDiscord",
     "image": "wedeploy/hosting:0.0.1",
-    "description": "Emojify your sentences for Discord chat!"
 }
