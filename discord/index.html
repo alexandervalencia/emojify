@@ -9,11 +9,8 @@
 
     <title>Emojify Discord Chat</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles for this template -->
-    <link href="css/cover.css" rel="stylesheet">
+    <link href="css/cover.min.css" rel="stylesheet">
     <link href="css/custom.min.css" rel="stylesheet">
   </head>
 
@@ -27,37 +24,42 @@
 
           <div class="inner cover">
             <h1 class="cover-heading">Emojify Discord Chat</h1>
+
             <form id="discord" onsubmit="return false;">
               <p class="lead">Type what you want to say here and we'll do our best to emojify what we can for you.</p>
+
               <textarea autofocus cols="60" form="discord" id="normal" rows="5" type="text"></textarea>
+
+              <label for="custom">Use Custom Emoji?</label>
+              <input id="custom" type="checkbox"></input>
+
+              <p class="lead">Emojified preview:</p>
+
+              <div class="preview-container">
+                <img class="user-icon" src="assets/user-icon.png" /> <span class="user">cooluser</span> <span class="timestamp">Today at 12:00 PM</span>
+
+                <div id="preview"></div>
+              </div>
+
               <p class="lead">Emojified output:</p>
+
               <textarea cols="60" id="emojified" type"text" rows="5" readonly></textarea><br>
-              <button class="btn clippy" data-clipboard-target="#emojified" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Copied!">
-                <span>Copy to clipboard</span>
-                <img src="assets/clippy.svg" alt="Copy to clipboard">
-              </button>
+
+              <div id="copy-wrapper">
+                <div class="copied">Copied!</div>
+
+                <button class="btn clippy" data-clipboard-target="#emojified" data-toggle="tooltip" data-trigger="click" data-placement="top" title="Copied!">
+                  <span>Copy to clipboard</span>
+
+                  <img src="assets/clippy.svg" alt="Copy to clipboard">
+                </button>
+              </div>
             </form>
           </div>
-
-          <div class="mastfoot">
-            <div class="inner">
-              <p></p>
-            </div>
-          </div>
-
         </div>
-
       </div>
-
     </div>
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-slim.min.js"></script>
-    <script src="js/tether.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/clipboard.min.js"></script>
-    <script src="js/emojify.js"></script>
+    <script src="js/emojify.min.js"></script>
   </body>
 </html>
